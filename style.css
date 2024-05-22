@@ -76,14 +76,14 @@ nav a{
     color: cornsilk;
     text-decoration: none;
     padding: 20px;
-}
 
-nav a:hover{
-    color: burlywood;
-}
+    &:hover{
+        color: burlywood;
+    }
 
-nav a:active{
-    color: #a0a214;
+    &:active{
+        color: #a0a214;
+    }
 }
 
 .menu-icon{
@@ -210,41 +210,14 @@ footer{
 }
 
 /*Responsive Navigation Bar*/
-.navbar-toggle {
-    display: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-    padding: 14px 20px;
-}
-
-#nav-bar input[type="checkbox"] {
-    display: none;
-}
-
-#nav-bar input[type="checkbox"]:checked ~ a,
-#nav-bar input[type="checkbox"]:checked ~ .dropdown {
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-    #nav-bar {
-        flex-direction: column;
-        align-items: flex-start;
+@media (max-width: 1280px){
+    header{
+        width: 100%;
     }
-
-    #nav-bar a,
-    #nav-bar .dropdown {
-        display: none;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-
-    .dropdown-content {
-        position: static;
+    nav{
+        width: 100%;
+        text-align: center;
+        font-size: 15pt;
+        word-spacing: 10px;
     }
 }
